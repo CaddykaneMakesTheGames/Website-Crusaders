@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <title>Website Crusaders</title>
+    <style>
+      .titletext {
+        color: gold;
+      }
+    </style>
+    <style>
+      .yellowtext {
+        color: goldenrod;
+      }
+    </style>
+    <style>
+      .normaltext {
+        color: navajowhite;
+      }
+    </style>
+    <p class="yellowtext">Before you submit an article, here are some basic rules:</p>
+    <ol class="yellowtext">
+      <li>No profanity. At all. Unless it directly relates to the situation or is quoted from someone else, I can't allow it.</li>
+      <li><b class="titletext">Absolutely</b> no sexual content. Not even if it directly relates to the situation or is quoted from someone else. This website was meant for everyone to enjoy.</li>
+      <li>Please, no trolling. It sucks, and it's just one more article for me to sift through that wastes time for people who actually want it in.</li>
+      <li>If you submit your article and there are any spelling/grammar errors or other mistakes, re-submit it with the "Re-Submission" button chosen.</li>
+    </ol>
+
+    <form action="articledone.html" method=post href="articledone.html">
+      <p class="normaltext">Name (I'll only use this to credit you):<br></p>
+      <input type="text" name="name">
+      <p class="normaltext">Title:</p>
+      <input type="text" name="title">
+      <p class="normaltext">Article:<br></p>
+      <input type="text" name="article" style="height:20px; width:500px;" maxlength="1000" onKeyPress="return taLimit(this)" onKeyUp="return taCount(this,'myCounter')" name="Description" rows=7 wrap="physical" cols=40> <br><p class="normaltext">You have<B> <SPAN id=myCounter>1000</SPAN></B> characters remaining 
+      for your description...</p>
+      <p class="normaltext">Is your article a...</p>
+      <input type="radio" name="submission"><b class="yellowtext">Original Submission</b><br>
+      <input type="radio" name="resubmission" class="yellowtext"><b class="yellowtext">Re-Submission</b>
+      <br><br>
+      <input name="article" type="submit" name="submit" action="articledone.html" method=post class="normaltext" style="background-color:grey; border-color:red; color:gold">
+    </form>
+
+    <hr color=gold length=50px>
+    <br>
+    <div style="text-align:center">
+      <button style="background-color:grey; border-color:red">
+        <h3 class="normaltext"><a href="index.html" style="color:gold">Go Back</a></h3>
+      </button>
+    </div>
+  </body>
+</html>
